@@ -1,0 +1,8 @@
+ work with hidden files and folders in  CLI 
+ period (.) like :
+
+ touch .Name.txt / for a folder ---> mkdir .Name
+
+ mkdir -p FolderName/FN1/FN2
+
+ echo with the -n switch : echo -n second message >> file.txt
