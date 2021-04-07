@@ -1,8 +1,13 @@
- work with hidden files and folders in  CLI 
+ #work with hidden files and folders in  CLI 
  period (.) like :
 
- touch .Name.txt / for a folder ---> mkdir .Name
+ #touch .Name.txt / for a folder ---> mkdir .Name
+ #to show them use 
+ ls -la
 
- mkdir -p FolderName/FN1/FN2
+ mkdir -p Folder/b/c/d...
 
- echo with the -n switch : echo -n second message >> file.txt
+# echo with the -n switch
+"echo -n second message" >> file.txt
+ 
+ 
