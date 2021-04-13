@@ -1,0 +1,147 @@
+ @font-face {
+  src: url(fonts/Play-Regular.ttf);
+  font-family: play;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  list-style: none;
+}
+body {
+  background-color: rgb(218, 218, 218);
+  font-family: play, Arial, Helvetica, sans-serif;
+}
+
+img {
+  box-sizing: border-box;
+  display: block;
+  object-fit:fill;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  border: 0;
+  padding: 3px;
+}
+
+p {
+  position: absolute;
+   bottom: 0px; 
+   left: 0px; 
+   text-align:center;
+  padding: 5px;
+  background-color: rgba(255, 255, 255, 0.616);
+  height: 82px;
+  font-size: 0.8rem;
+  font-weight:bold;
+
+}
+section {
+  margin: 10px;
+  clear: both;
+}
+li {
+  margin: 8px;
+  transition: all 0.5s ease-in-out;
+  background-color: white;
+  border-radius: 3px;
+  overflow:hidden;
+  position: relative;
+}
+li:hover
+{
+  cursor: pointer;
+  transform: scale(1.05);
+}
+h2,
+h3 {
+  color: rgb(0, 0, 0);
+  margin-top: 6px;
+
+}
+.grid-floats li {
+  width: 100%;
+}
+
+.grid-flex {
+  display: flex;
+  flex-flow: wrap;
+}
+
+@media only screen and (min-width: 722px) and (max-width: 1344px) {
+  .grid-floats li {
+    width: 31%;
+    float: left;
+    list-style: none;
+  }
+
+  .grid-floats li:nth-child(1) {
+    width: 47.5%;
+    height: 300px;
+  }
+  .grid-floats li:nth-child(2) {
+    width: 47.5%;
+    height: 300px;
+  }
+  .grid-flex li {
+    width: 31%;
+    height: 300px;
+  }
+  .grid-flex li:nth-child(1) {
+    width: 47.5%;
+    height: 300px;
+  }
+  .grid-flex li:nth-child(2) {
+    width: 47.5%;
+    height: 300px;
+  }
+  h2,h3 {
+  font-size: 0.9rem;
+  }
+  p
+  {
+
+    font-size: 0.65rem;
+  }
+}
+
+
+@media only screen and (min-width: 1334px) {
+  .grid-floats li {
+    width: 23.3%;
+    height: 400px;
+    float: left;
+    margin: 8px;
+    border: 1px solid rgba(27, 24, 24, 0.137);
+    list-style: none;
+    border-bottom:3px solid rgba(0, 0, 0, 0.438) ;
+    border-left:3px solid rgba(216, 216, 216, 0.171) ;
+    border-right:3px solid rgba(0, 0, 0, 0.171) ;
+    border-top:3px solid rgba(248, 248, 248, 0.171) ;
+  }
+  .grid-floats li:nth-child(1) {
+    width: 48%;
+    height: 400px;
+    max-height: 400px;
+    margin-right: 12px;
+  }
+  .grid-floats li:nth-child(2) {
+    height: 400px;
+  }
+  .grid-floats li:nth-child(3) {
+    height: 400px;
+  }
+
+  .grid-flex li {
+    width: 23.6%;
+    height: 400px;
+  }
+  .grid-flex li:nth-child(1) {
+    width: 48%;
+    margin: 10px;
+    height: 400px;
+    max-height: 400px;
+  }
+  
+}
